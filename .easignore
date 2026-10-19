@@ -1,0 +1,26 @@
+node_modules/
+.env
+.env.local
+.env.*.local
+
+# 先頭の / は必須。無いと同名のサブディレクトリまで一致してしまい、
+# 実際に src/supabase/ がアップロードから丸ごと落ちて
+# 「Unable to resolve module ../supabase/client」でビルドが落ちた。
+/.expo/
+/dist/
+/ios/
+/android/
+/.git/
+/.idea/
+/.claude/
+/.codex/
+/.codex-*/
+/supabase/
+/worker/
+/landing/
+/docs/
+/tests/
+/tmp/
+/scripts/
+/screenshots/
+*.md

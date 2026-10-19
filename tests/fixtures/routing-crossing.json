@@ -1,0 +1,662 @@
+{
+  "connections": [
+    {
+      "id": "map-auto-0",
+      "fromGadgetId": "g3",
+      "toGadgetId": "g1",
+      "cableType": "Ethernet",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-1",
+      "fromGadgetId": "g3",
+      "toGadgetId": "g15",
+      "cableType": "Ethernet",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-2",
+      "fromGadgetId": "g3",
+      "toGadgetId": "g8",
+      "cableType": "WiFi",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": true
+    },
+    {
+      "id": "map-auto-3",
+      "fromGadgetId": "g3",
+      "toGadgetId": "g12",
+      "cableType": "WiFi",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": true
+    },
+    {
+      "id": "map-auto-4",
+      "fromGadgetId": "g0",
+      "toGadgetId": "g10",
+      "cableType": "Bluetooth",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": true
+    },
+    {
+      "id": "map-auto-5",
+      "fromGadgetId": "wall",
+      "toGadgetId": "g1",
+      "cableType": "Power",
+      "chargingOnly": false,
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-6",
+      "fromGadgetId": "g1",
+      "toGadgetId": "g2",
+      "cableType": "USB_A",
+      "chargingOnly": false,
+      "sourcePortId": "p7#0",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-7",
+      "fromGadgetId": "wall",
+      "toGadgetId": "g3",
+      "cableType": "Power",
+      "chargingOnly": false,
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-8",
+      "fromGadgetId": "g1",
+      "toGadgetId": "g5",
+      "cableType": "USB_C",
+      "chargingOnly": false,
+      "sourcePortId": "p8#0",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-9",
+      "fromGadgetId": "g1",
+      "toGadgetId": "g7",
+      "cableType": "USB_C",
+      "chargingOnly": false,
+      "sourcePortId": "p8#1",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-10",
+      "fromGadgetId": "g1",
+      "toGadgetId": "g9",
+      "cableType": "USB_A_to_C",
+      "chargingOnly": false,
+      "sourcePortId": "p7#1",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-11",
+      "fromGadgetId": "g1",
+      "toGadgetId": "g10",
+      "cableType": "USB_A_to_C",
+      "chargingOnly": false,
+      "sourcePortId": "p7#2",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-12",
+      "fromGadgetId": "g1",
+      "toGadgetId": "g13",
+      "cableType": "USB_A_to_C",
+      "chargingOnly": false,
+      "sourcePortId": "p7#3",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-13",
+      "fromGadgetId": "g1",
+      "toGadgetId": "g14",
+      "cableType": "USB_A",
+      "chargingOnly": false,
+      "sourcePortId": "p7#4",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    }
+  ],
+  "gadgets": [
+    {
+      "name": "ノートパソコン",
+      "category": "PC",
+      "ports": [],
+      "id": "g0",
+      "createdAt": "2026-01-01T00:00:00Z",
+      "pcFormFactor": "desktop"
+    },
+    {
+      "name": "Dell U2725QE",
+      "model": "U2725QE",
+      "category": "Monitor",
+      "brand": "Dell",
+      "officialUrl": "https://www.dell.com/ja-jp/shop/dell--27-4k-thunderbolt--u2725qe/apd/210-bqmd/-",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "Thunderbolt",
+          "direction": "input",
+          "count": 1,
+          "supportsVideo": true,
+          "supportsPowerDelivery": true,
+          "label": "Thunderbolt 4 upstream (PD 140W)"
+        },
+        {
+          "id": "p2",
+          "type": "Thunderbolt",
+          "direction": "output",
+          "count": 1,
+          "supportsVideo": true,
+          "supportsPowerDelivery": true,
+          "label": "Thunderbolt 4 downstream (PD 15W)"
+        },
+        {
+          "id": "p3",
+          "type": "USB_C",
+          "direction": "input",
+          "count": 1,
+          "label": "USB-C KVM upstream"
+        },
+        {
+          "id": "p4",
+          "type": "HDMI",
+          "direction": "input",
+          "count": 1,
+          "supportsVideo": true
+        },
+        {
+          "id": "p5",
+          "type": "DisplayPort",
+          "direction": "input",
+          "count": 1,
+          "supportsVideo": true
+        },
+        {
+          "id": "p6",
+          "type": "DisplayPort",
+          "direction": "output",
+          "count": 1,
+          "supportsVideo": true,
+          "label": "DP MST out"
+        },
+        {
+          "id": "p7",
+          "type": "USB_A",
+          "direction": "output",
+          "count": 5
+        },
+        {
+          "id": "p8",
+          "type": "USB_C",
+          "direction": "output",
+          "count": 2
+        },
+        {
+          "id": "p9",
+          "type": "Ethernet",
+          "direction": "input",
+          "count": 1,
+          "label": "2.5GbE RJ-45"
+        },
+        {
+          "id": "p10",
+          "type": "Audio3_5mm",
+          "direction": "output",
+          "count": 1
+        },
+        {
+          "id": "p11",
+          "type": "Power",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g1",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Govee Immersion TV バックライト",
+      "model": "Immersion TV Backlight",
+      "category": "Light",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_A",
+          "direction": "input",
+          "count": 1,
+          "label": "USB電源"
+        }
+      ],
+      "id": "g2",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "NEC Aterm WX3600HP (Wi-Fi 6)",
+      "model": "Aterm WX3600HP",
+      "category": "Router",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "Ethernet",
+          "direction": "input",
+          "count": 1,
+          "label": "WAN (1G)"
+        },
+        {
+          "id": "p2",
+          "type": "Ethernet",
+          "direction": "output",
+          "count": 3,
+          "label": "LAN"
+        },
+        {
+          "id": "p3",
+          "type": "USB_A",
+          "direction": "output",
+          "count": 1
+        },
+        {
+          "id": "p4",
+          "type": "Power",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g3",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Dell Alienware AW2725QF (27\" 4K 180Hz)",
+      "model": "AW2725QF",
+      "category": "Monitor",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "HDMI",
+          "direction": "input",
+          "count": 2,
+          "supportsVideo": true,
+          "label": "HDMI 2.1"
+        },
+        {
+          "id": "p2",
+          "type": "DisplayPort",
+          "direction": "input",
+          "count": 1,
+          "supportsVideo": true,
+          "label": "DP 1.4"
+        },
+        {
+          "id": "p3",
+          "type": "USB_A",
+          "direction": "output",
+          "count": 3
+        },
+        {
+          "id": "p4",
+          "type": "USB_C",
+          "direction": "output",
+          "count": 1
+        },
+        {
+          "id": "p5",
+          "type": "Audio3_5mm",
+          "direction": "output",
+          "count": 1
+        },
+        {
+          "id": "p_up",
+          "type": "USB_B",
+          "direction": "input",
+          "count": 1,
+          "label": "USB upstream"
+        },
+        {
+          "id": "p6",
+          "type": "Power",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g4",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "ASUS ZenScreen MB16ACV (ポータブル)",
+      "model": "ZenScreen MB16ACV",
+      "category": "Monitor",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_C",
+          "direction": "input",
+          "count": 2,
+          "supportsVideo": true,
+          "label": "USB-C (映像 / 給電)"
+        }
+      ],
+      "id": "g5",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Pixio PX329 (32\" QHD 165Hz)",
+      "model": "PX329",
+      "category": "Monitor",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "HDMI",
+          "direction": "input",
+          "count": 2,
+          "supportsVideo": true
+        },
+        {
+          "id": "p2",
+          "type": "DisplayPort",
+          "direction": "input",
+          "count": 2,
+          "supportsVideo": true
+        },
+        {
+          "id": "p4",
+          "type": "Audio3_5mm",
+          "direction": "output",
+          "count": 1
+        },
+        {
+          "id": "p5",
+          "type": "Power",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g6",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Audio-Technica AT2020USB-X",
+      "model": "AT2020USB-X",
+      "category": "Microphone",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_C",
+          "direction": "input",
+          "count": 1,
+          "label": "PC接続"
+        },
+        {
+          "id": "p2",
+          "type": "Audio3_5mm",
+          "direction": "output",
+          "count": 1
+        }
+      ],
+      "id": "g7",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "HP Color Laser 150nw",
+      "model": "Color Laser 150nw",
+      "category": "Printer",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_B",
+          "direction": "input",
+          "count": 1,
+          "label": "PC接続"
+        },
+        {
+          "id": "p2",
+          "type": "Power",
+          "direction": "input",
+          "count": 1
+        },
+        {
+          "id": "p3",
+          "type": "WiFi",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g8",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "HyperX Alloy Origins Core TKL",
+      "model": "Alloy Origins Core",
+      "category": "Keyboard",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_C",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g9",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Logicool G515 TKL",
+      "model": "G515 TKL",
+      "category": "Keyboard",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_C",
+          "direction": "input",
+          "count": 1,
+          "label": "充電 / 有線"
+        },
+        {
+          "id": "p_bt",
+          "type": "Bluetooth",
+          "direction": "bidirectional",
+          "count": 1
+        }
+      ],
+      "id": "g10",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "NEC Aterm WX7800T8 (Wi-Fi 6E)",
+      "model": "Aterm WX7800T8",
+      "category": "Router",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "Ethernet",
+          "direction": "input",
+          "count": 1,
+          "label": "WAN (2.5G)"
+        },
+        {
+          "id": "p2",
+          "type": "Ethernet",
+          "direction": "output",
+          "count": 4,
+          "label": "LAN"
+        },
+        {
+          "id": "p3",
+          "type": "USB_A",
+          "direction": "output",
+          "count": 1
+        },
+        {
+          "id": "p4",
+          "type": "Power",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g11",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Brother HL-L2375DW (モノクロレーザー)",
+      "model": "HL-L2375DW",
+      "category": "Printer",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_B",
+          "direction": "input",
+          "count": 1,
+          "label": "PC接続"
+        },
+        {
+          "id": "p2",
+          "type": "Ethernet",
+          "direction": "input",
+          "count": 1
+        },
+        {
+          "id": "p3",
+          "type": "Power",
+          "direction": "input",
+          "count": 1
+        },
+        {
+          "id": "p4",
+          "type": "WiFi",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g12",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Sony INZONE H9 (ゲーミングヘッドセット)",
+      "model": "INZONE H9",
+      "category": "Headphone",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_C",
+          "direction": "input",
+          "count": 1,
+          "label": "充電"
+        },
+        {
+          "id": "p2",
+          "type": "USB_A",
+          "direction": "input",
+          "count": 1,
+          "label": "USBドングル",
+          "directAttach": true
+        }
+      ],
+      "id": "g13",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "BenQ ScreenBar",
+      "model": "ScreenBar",
+      "category": "Light",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_A",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g14",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Synology DiskStation DS223j (NAS)",
+      "model": "DiskStation DS223j",
+      "category": "Storage",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "Ethernet",
+          "direction": "input",
+          "count": 1
+        },
+        {
+          "id": "p2",
+          "type": "USB_A",
+          "direction": "output",
+          "count": 2
+        },
+        {
+          "id": "p3",
+          "type": "Power",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g15",
+      "createdAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "placements": [
+    {
+      "gadgetId": "g0",
+      "zone": "desk_left"
+    },
+    {
+      "gadgetId": "g1",
+      "zone": "front_right"
+    },
+    {
+      "gadgetId": "g2",
+      "zone": "under_desk"
+    },
+    {
+      "gadgetId": "g3",
+      "zone": "desk_back"
+    },
+    {
+      "gadgetId": "g4",
+      "zone": "back_right"
+    },
+    {
+      "gadgetId": "g8",
+      "zone": "desk_back"
+    },
+    {
+      "gadgetId": "g10",
+      "zone": "desk_back"
+    },
+    {
+      "gadgetId": "g13",
+      "zone": "front_center"
+    }
+  ],
+  "sizes": {},
+  "offsets": {}
+}

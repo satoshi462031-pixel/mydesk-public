@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <!-- 公式デモデスク②：クリエイター｜ノートPCから出る線をケーブル1本にする -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F1B26"/>
+      <stop offset="100%" stop-color="#070D14"/>
+    </linearGradient>
+    <radialGradient id="wallGlow" cx="52%" cy="36%" r="54%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#123645"/>
+      <stop offset="100%" stop-color="#091820"/>
+    </linearGradient>
+    <linearGradient id="deskTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3F3628"/>
+      <stop offset="100%" stop-color="#231D14"/>
+    </linearGradient>
+    <linearGradient id="barLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E0F2FE" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#E0F2FE" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .lbl   { font-family: "Yu Gothic UI","Meiryo","Segoe UI",sans-serif; font-size: 21px; fill: #93A3BC; }
+      .lead  { stroke: #475569; stroke-width: 1.5; fill: none; }
+      .dot   { fill: #22D3EE; }
+      .title { font-family: "Yu Gothic UI","Meiryo","Segoe UI",sans-serif; font-size: 46px; font-weight: 700; fill: #F1F5F9; }
+      .sub   { font-family: "Yu Gothic UI","Meiryo","Segoe UI",sans-serif; font-size: 24px; fill: #6B7C93; }
+      .badge { font-family: "Segoe UI",sans-serif; font-size: 18px; font-weight: 700; fill: #22D3EE; letter-spacing: 2px; }
+      .hero  { font-family: "Yu Gothic UI","Meiryo","Segoe UI",sans-serif; font-size: 26px; font-weight: 700; fill: #67E8F9; }
+      .case  { fill: #17222E; stroke: #2F4152; stroke-width: 2; }
+      .bezel { fill: #141D27; stroke: #2F4152; stroke-width: 2.5; }
+      .cable { fill: none; stroke: #64748B; stroke-width: 3; stroke-opacity: 0.5; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#wallGlow)"/>
+
+  <g stroke="#182634" stroke-width="1" opacity="0.7">
+    <path d="M0 130H1600M0 260H1600M0 390H1600M0 520H1600"/>
+    <path d="M240 0V680M480 0V680M720 0V680M960 0V680M1200 0V680M1440 0V680"/>
+  </g>
+
+  <rect x="0" y="928" width="1600" height="72" fill="#080E15"/>
+  <path d="M0 928H1600" stroke="#1B2836" stroke-width="2"/>
+
+  <!-- マイクブーム（RØDE PSA1+） -->
+  <g fill="none" stroke="#243444" stroke-width="9" stroke-linecap="round">
+    <path d="M96 286l150 46"/>
+    <path d="M246 332l178-34"/>
+  </g>
+  <g>
+    <rect x="404" y="292" width="40" height="106" rx="18" class="case"/>
+    <g stroke="#33475C" stroke-width="2">
+      <path d="M410 312h28M410 326h28M410 340h28M410 354h28M410 368h28"/>
+    </g>
+  </g>
+
+  <!-- モニターアーム（Ergotron LX シングル） -->
+  <g>
+    <rect x="800" y="380" width="20" height="272" rx="6" fill="#1D2836" stroke="#324458" stroke-width="2"/>
+    <rect x="784" y="636" width="52" height="20" rx="6" fill="#243244"/>
+  </g>
+
+  <!-- 32" 4K モニター（Thunderbolt 入力でハブを兼ねる） -->
+  <g>
+    <rect x="536" y="272" width="568" height="336" rx="12" class="bezel"/>
+    <rect x="550" y="286" width="540" height="300" rx="6" fill="url(#screen)"/>
+    <!-- 編集ソフトらしい画面 -->
+    <g opacity="0.6">
+      <rect x="550" y="286" width="540" height="26" fill="#0C1F29"/>
+      <rect x="562" y="326" width="330" height="196" rx="4" fill="#0E2C3A"/>
+      <path d="M582 470l70-72 58 46 72-84 92 110" stroke="#2C7E96" stroke-width="4" fill="none"/>
+      <circle cx="640" cy="372" r="26" fill="#1D5A70"/>
+      <rect x="908" y="326" width="170" height="12" rx="6" fill="#164254"/>
+      <rect x="908" y="350" width="140" height="12" rx="6" fill="#12333F"/>
+      <rect x="908" y="374" width="158" height="12" rx="6" fill="#12333F"/>
+      <rect x="562" y="538" width="516" height="34" rx="5" fill="#0B222C"/>
+      <g fill="#1D5A70">
+        <rect x="574" y="548" width="120" height="14" rx="4"/>
+        <rect x="706" y="548" width="86" height="14" rx="4"/>
+        <rect x="804" y="548" width="150" height="14" rx="4"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- モニターライト -->
+  <g>
+    <rect x="700" y="254" width="240" height="16" rx="8" fill="#1F2B39" stroke="#324458" stroke-width="2"/>
+    <path d="M700 272h240l56 84H644z" fill="url(#barLight)"/>
+  </g>
+
+  <!-- デスク -->
+  <g>
+    <rect x="96" y="650" width="1408" height="28" rx="6" fill="url(#deskTop)"/>
+    <rect x="96" y="650" width="1408" height="6" rx="3" fill="#574934" opacity="0.8"/>
+    <rect x="236" y="678" width="40" height="250" fill="#16202C"/>
+    <rect x="1322" y="678" width="40" height="250" fill="#16202C"/>
+    <rect x="200" y="918" width="112" height="14" rx="6" fill="#1D2836"/>
+    <rect x="1286" y="918" width="112" height="14" rx="6" fill="#1D2836"/>
+  </g>
+
+  <!-- MacBook Pro 16"（開いた状態） -->
+  <g>
+    <rect x="150" y="474" width="252" height="168" rx="10" class="bezel"/>
+    <rect x="162" y="486" width="228" height="144" rx="5" fill="#0D2029"/>
+    <g opacity="0.55">
+      <rect x="176" y="500" width="86" height="10" rx="5" fill="#1D5A70"/>
+      <rect x="176" y="520" width="150" height="8" rx="4" fill="#123540"/>
+      <rect x="176" y="538" width="128" height="8" rx="4" fill="#123540"/>
+      <rect x="176" y="566" width="200" height="48" rx="5" fill="#10303C"/>
+    </g>
+    <path d="M132 642h288l14 8H118z" fill="#1E2A38" stroke="#2F4152" stroke-width="2"/>
+  </g>
+
+  <!-- ★ Thunderbolt 1本（この構成の主役） -->
+  <g filter="url(#glow)">
+    <path d="M404 604c68 0 96-14 132-24" fill="none" stroke="#22D3EE" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <circle cx="404" cy="604" r="7" fill="#22D3EE"/>
+  <circle cx="536" cy="580" r="7" fill="#22D3EE"/>
+
+  <!-- スタジオモニター（Yamaha HS5 ステレオペア） -->
+  <g>
+    <rect x="420" y="500" width="98" height="150" rx="8" class="case"/>
+    <circle cx="469" cy="580" r="28" fill="#0B141C" stroke="#38506A" stroke-width="3"/>
+    <circle cx="469" cy="532" r="10" fill="#0B141C" stroke="#38506A" stroke-width="2"/>
+    <rect x="1122" y="500" width="98" height="150" rx="8" class="case"/>
+    <circle cx="1171" cy="580" r="28" fill="#0B141C" stroke="#38506A" stroke-width="3"/>
+    <circle cx="1171" cy="532" r="10" fill="#0B141C" stroke="#38506A" stroke-width="2"/>
+  </g>
+
+  <!-- キーボード（HHKB） -->
+  <g>
+    <path d="M572 614h206l14 36H558z" fill="#1D2836" stroke="#2F4152" stroke-width="2"/>
+    <g fill="#2F4152">
+      <rect x="580" y="622" width="186" height="7" rx="3"/>
+      <rect x="576" y="633" width="194" height="7" rx="3"/>
+      <rect x="572" y="644" width="202" height="5" rx="3"/>
+    </g>
+  </g>
+
+  <!-- ペンタブレット（Wacom Intuos Pro） -->
+  <g>
+    <path d="M822 606h226l16 44H806z" fill="#1B2632" stroke="#2F4152" stroke-width="2"/>
+    <rect x="846" y="616" width="170" height="28" rx="4" fill="#132029"/>
+    <path d="M1058 600l-26 46" stroke="#38506A" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- マウス -->
+  <path d="M1076 618c19 0 31 12 31 28s-12 20-31 20-31-4-31-20 12-28 31-28z" fill="#1D2836" stroke="#2F4152" stroke-width="2"/>
+
+  <!-- オーディオインターフェース（Scarlett 2i2） -->
+  <g>
+    <rect x="1250" y="602" width="164" height="48" rx="8" fill="#8B2E1A" stroke="#B4552F" stroke-width="2"/>
+    <circle cx="1284" cy="626" r="14" fill="#160E0A" stroke="#D97B4A" stroke-width="2"/>
+    <circle cx="1326" cy="626" r="14" fill="#160E0A" stroke="#D97B4A" stroke-width="2"/>
+    <circle cx="1382" cy="626" r="10" fill="#160E0A" stroke="#D97B4A" stroke-width="2"/>
+  </g>
+
+  <!-- デスク下：電源タップだけ -->
+  <g>
+    <rect x="640" y="856" width="230" height="40" rx="8" class="case"/>
+    <g fill="#0C1620">
+      <rect x="658" y="867" width="26" height="18" rx="3"/>
+      <rect x="694" y="867" width="26" height="18" rx="3"/>
+      <rect x="730" y="867" width="26" height="18" rx="3"/>
+      <rect x="766" y="867" width="26" height="18" rx="3"/>
+      <rect x="802" y="867" width="26" height="18" rx="3"/>
+    </g>
+  </g>
+
+  <!-- 配線：電源だけがデスク下へ落ちる -->
+  <g class="cable">
+    <path d="M700 856c0-58 40-90 100-100"/>
+    <path d="M790 856c40-46 120-64 174-70"/>
+    <path d="M840 862c60-24 150-40 210-44"/>
+  </g>
+
+  <!-- ラベル -->
+  <g>
+    <path class="lead" d="M536 272v-26"/><circle class="dot" cx="536" cy="272" r="4"/>
+    <text class="lbl" x="536" y="232">32" 4K・Thunderbolt 入力つき</text>
+
+    <path class="lead" d="M170 650v96h-56"/><circle class="dot" cx="170" cy="650" r="4"/>
+    <text class="lbl" x="96" y="778">MacBook Pro 16"</text>
+
+    <path class="lead" d="M1332 602v-44h96"/><circle class="dot" cx="1332" cy="602" r="4"/>
+    <text class="lbl" x="1436" y="564" text-anchor="end">オーディオIF</text>
+
+    <path class="lead" d="M755 856v34h150"/><circle class="dot" cx="755" cy="856" r="4"/>
+    <text class="lbl" x="916" y="898">デスク下は電源だけ</text>
+  </g>
+
+  <!-- ★ 主役の吹き出し -->
+  <g>
+    <path class="lead" d="M406 600h6V462h-24" stroke="#22D3EE" stroke-opacity="0.6"/>
+    <text class="hero" x="376" y="396" text-anchor="end">ケーブル 1本</text>
+    <text class="lbl" x="376" y="430" text-anchor="end">映像・USB機器・140W給電が</text>
+    <text class="lbl" x="376" y="458" text-anchor="end">すべてこの1本に相乗りする</text>
+  </g>
+
+  <!-- タイトル -->
+  <g>
+    <rect x="96" y="86" width="86" height="30" rx="6" fill="#22D3EE" fill-opacity="0.14" stroke="#22D3EE" stroke-opacity="0.5"/>
+    <text class="badge" x="112" y="107">DEMO</text>
+    <text class="title" x="96" y="176">クリエイター｜ケーブル1本</text>
+    <text class="sub" x="98" y="216">モニターをハブにして机の上から線を消す</text>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+title = "MyDesk secret detection"
+
+[extend]
+useDefault = true
+
+# 初期コミットの見本値。JWTのヘッダーと省略記号だけで、認証情報を含まない。
+# ファイル・コミット全体を除外せず、この文字列だけを許可する。
+[[allowlists]]
+description = "Historical truncated JWT header placeholder"
+regexTarget = "secret"
+regexes = ['''^eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\.\.\.$''']

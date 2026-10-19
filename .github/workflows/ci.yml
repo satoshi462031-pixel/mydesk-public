@@ -1,0 +1,76 @@
+# アプリ本体（Expo / React Native）の CI。
+#
+# 目的は「壊れたコードが master に入る可能性を減らす」ことだけ。ビルド・デプロイはしない。
+# 手元の `npm run check` に含まれる型検査・lint・アプリ／DBテストと、Denoの型検査をGitHub上で
+# まっさらな状態から流す。手元では通るのに「git に入れ忘れたファイル」や
+# 「自分の端末にだけある設定」に頼っているコードは、ここで落ちる。
+#
+# landing / worker は別の非公開リポジトリ（submodule）なので、ここでは取得しない。
+# 取得するにはそれらを読める個人トークンを secret に置く必要があり、権限を広げるほどの
+# 利点がない。worker のテストは worker リポジトリ自身の CI で流す。
+
+name: CI
+
+on:
+  # どのブランチへの push でも走らせる（作業ブランチで先に気づけるように）
+  push:
+  # Pull Request を開いた・更新したときにも走らせる（master へ入れる前の最後の確認）
+  pull_request:
+
+# 同じブランチへ続けて push したら、古い方の実行は止める（無料枠の分数を無駄にしない）
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+# このワークフローはコードを読むだけ。書き込み権限は渡さない
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    # 普段は2〜4分で終わる。何かが固まったときに無料枠を食い潰さないための上限
+    timeout-minutes: 15
+
+    steps:
+      # リポジトリの中身を取得する（submodule は取らない＝上の説明のとおり）
+      - uses: actions/checkout@v4
+
+      # 手元と同じ Node の版にそろえる。
+      # cache: npm は npm のダウンロード置き場（~/.npm）を package-lock.json 単位で保存し、
+      # 2回目以降の依存インストールを速くする。Expo の依存は重いので効果がある
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      # package-lock.json のとおりに依存を入れる（npm install と違い lock を書き換えない。
+      # lock と package.json が食い違っていたらここで失敗する）
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      # 型検査（strict + 未使用の変数・引数）。src と scripts 全体
+      - name: Type check
+        run: npm run typecheck
+
+      # lint。型では出ないバグ（フックの依存配列の漏れ・誰も失敗を受け取らない Promise）を止める
+      - name: Lint
+        run: npm run lint
+
+      # テストファイル側の型検査（tests/tsconfig.json の include に載せたものだけ）
+      - name: Type check tests
+        run: npm run test:typecheck
+
+      # アプリのテスト（node:test）。配線の計算・データ変換・入力検証など
+      - name: Test
+        run: npm run test:app
+
+      - name: Test database security
+        run: npm run test:db
+
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.9.6
+
+      - name: Type check Edge Functions
+        run: npm run typecheck:edge

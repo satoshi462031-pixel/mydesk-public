@@ -1,0 +1,6 @@
+{
+  "CFBundleDisplayName": "MyDesk",
+  "CFBundleName": "MyDesk",
+  "NSPhotoLibraryUsageDescription": "Used to choose and save photos of your desk.",
+  "NSFaceIDUsageDescription": "Used to verify your identity and sign in with a passkey."
+}

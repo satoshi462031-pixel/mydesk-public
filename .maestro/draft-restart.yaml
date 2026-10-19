@@ -1,0 +1,25 @@
+appId: com.ash462031.mydesk
+name: 初回作成の用途が再起動後も残る
+---
+- launchApp:
+    clearState: true
+    permissions:
+      all: deny
+- extendedWaitUntil:
+    visible: "自分のデスクを登録する"
+    timeout: 30000
+- tapOn: "自分のデスクを登録する"
+- tapOn: "許可しない"
+- tapOn: "ガイドを終了"
+- tapOn: "仕事"
+- assertVisible:
+    text: "仕事"
+    checked: true
+- launchApp
+- extendedWaitUntil:
+    visible: "どんな用途のデスクですか？"
+    timeout: 30000
+- assertVisible:
+    text: "仕事"
+    checked: true
+- assertNotVisible: "自分のデスクを登録する"

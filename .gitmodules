@@ -1,0 +1,8 @@
+[submodule "landing"]
+	path = landing
+	url = https://github.com/satoshi462031-pixel/mydesk-landing.git
+	branch = main
+[submodule "worker"]
+	path = worker
+	url = https://github.com/satoshi462031-pixel/mydesk-worker.git
+	branch = master

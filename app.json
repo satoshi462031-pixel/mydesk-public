@@ -1,0 +1,124 @@
+{
+  "expo": {
+    "name": "MyDesk",
+    "slug": "desk-management",
+    "version": "1.0.0",
+    "icon": "./assets/icon.png",
+    "orientation": "portrait",
+    "scheme": "mydesk",
+    "userInterfaceStyle": "automatic",
+    "locales": {
+      "ja": "./locales/ja.json",
+      "en": "./locales/en.json"
+    },
+    "runtimeVersion": {
+      "policy": "fingerprint"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/53cd5722-f894-4d16-b879-8e78d759f1df",
+      "fallbackToCacheTimeout": 0
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ash462031.mydesk",
+      "usesAppleSignIn": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "デスクの写真を選んで保存するために使用します。",
+        "NSFaceIDUsageDescription": "パスキーで本人確認してログインするために使用します。",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "associatedDomains": [
+        "applinks:mydesk.page",
+        "webcredentials:mydesk.page"
+      ]
+    },
+    "android": {
+      "package": "com.ash462031.mydesk",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FF9900"
+      },
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "mydesk.page",
+              "pathPrefix": "/d/"
+            },
+            {
+              "scheme": "https",
+              "host": "mydesk.page",
+              "pathPrefix": "/setup/"
+            },
+            {
+              "scheme": "https",
+              "host": "mydesk.page",
+              "pathPrefix": "/desk/"
+            },
+            {
+              "scheme": "https",
+              "host": "mydesk.page",
+              "pathPrefix": "/u/"
+            },
+            {
+              "scheme": "https",
+              "host": "mydesk.page",
+              "pathPattern": "/.*/......................"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+      "permissions": [],
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "デスクの写真を選んで保存するために使用します。",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ],
+      "expo-secure-store",
+      "expo-web-browser",
+      "expo-apple-authentication",
+      "@react-native-community/datetimepicker",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-blank.png",
+          "imageWidth": 152,
+          "resizeMode": "contain",
+          "backgroundColor": "#F2F2F7",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-localization",
+      "expo-asset",
+      ["expo-notifications", { "defaultChannel": "default" }],
+      "@sentry/react-native"
+    ],
+    "owner": "ash462031",
+    "extra": {
+      "eas": {
+        "projectId": "53cd5722-f894-4d16-b879-8e78d759f1df"
+      }
+    }
+  }
+}

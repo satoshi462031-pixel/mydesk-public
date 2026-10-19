@@ -1,0 +1,49 @@
+node_modules/
+.expo/
+dist/
+.env*
+!.env.example
+.dev.vars*
+!.dev.vars.example
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.keystore
+*.jks
+*.mobileprovision
+credentials.json
+service-account*.json
+.aws/
+*.log
+ios/
+android/
+
+# Supabase CLI のリンク情報。project ref・pooler URL・
+# プロジェクト名（＝アカウントのメールアドレス）が入る
+supabase/.temp/
+
+# App Store 用スクリーンショット（実機の撮って出しとリサイズ結果。数十MBになる）
+screenshots/
+.codex-backups/
+.codex-worker-node-modules-backup/
+
+# 使い捨ての置き場と検証スクリプト。アンダースコア始まりは
+# 「その場で書いて消す」の印として使っている
+tmp/
+outputs/
+/_*.ts
+
+# npm run feedback:pull の出力。利用者の書いた本文と user_id が入る
+.feedback/
+scripts/_*.ts
+
+# IDE のローカル設定（.vscode/settings.json はプロジェクト共有なので追跡したまま）
+.idea/
+
+.claude/settings.local.json
+
+# Local AI development files
+.codex-*.png
+.claude/launch.json

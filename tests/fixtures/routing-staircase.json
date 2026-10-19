@@ -1,0 +1,991 @@
+{
+  "placements": [
+    {
+      "gadgetId": "g2",
+      "zone": "back_center"
+    },
+    {
+      "gadgetId": "g3",
+      "zone": "back_right"
+    },
+    {
+      "gadgetId": "g4",
+      "zone": "front_center"
+    },
+    {
+      "gadgetId": "g8",
+      "zone": "desk_left"
+    },
+    {
+      "gadgetId": "g10",
+      "zone": "desk_left"
+    },
+    {
+      "gadgetId": "g13",
+      "zone": "back_center"
+    },
+    {
+      "gadgetId": "g19",
+      "zone": "desk_right"
+    },
+    {
+      "gadgetId": "g20",
+      "zone": "desk_left"
+    },
+    {
+      "gadgetId": "g22",
+      "zone": "back_center"
+    },
+    {
+      "gadgetId": "g23",
+      "zone": "desk_right"
+    },
+    {
+      "gadgetId": "g24",
+      "zone": "back_left"
+    },
+    {
+      "gadgetId": "g25",
+      "zone": "back_left"
+    }
+  ],
+  "connections": [
+    {
+      "id": "map-auto-0",
+      "fromGadgetId": "g0",
+      "toGadgetId": "g6",
+      "cableType": "Thunderbolt",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-1",
+      "fromGadgetId": "g0",
+      "toGadgetId": "g7",
+      "cableType": "USB_C",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-2",
+      "fromGadgetId": "g6",
+      "toGadgetId": "g1",
+      "cableType": "Thunderbolt",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-3",
+      "fromGadgetId": "g1",
+      "toGadgetId": "g2",
+      "cableType": "Thunderbolt",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-4",
+      "fromGadgetId": "g6",
+      "toGadgetId": "g3",
+      "cableType": "HDMI",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-5",
+      "fromGadgetId": "g16",
+      "toGadgetId": "g1",
+      "cableType": "Ethernet",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-6",
+      "fromGadgetId": "g16",
+      "toGadgetId": "g6",
+      "cableType": "Ethernet",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-7",
+      "fromGadgetId": "g16",
+      "toGadgetId": "g23",
+      "cableType": "WiFi",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": true
+    },
+    {
+      "id": "map-auto-8",
+      "fromGadgetId": "g0",
+      "toGadgetId": "g3",
+      "cableType": "USB_A_to_B",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-9",
+      "fromGadgetId": "g0",
+      "toGadgetId": "g4",
+      "cableType": "USB_A_to_C",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-10",
+      "fromGadgetId": "g0",
+      "toGadgetId": "g5",
+      "cableType": "Bluetooth",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": true
+    },
+    {
+      "id": "map-auto-11",
+      "fromGadgetId": "g0",
+      "toGadgetId": "g9",
+      "cableType": "Bluetooth",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": true
+    },
+    {
+      "id": "map-auto-12",
+      "fromGadgetId": "g19",
+      "toGadgetId": "g10",
+      "cableType": "Bluetooth",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": true
+    },
+    {
+      "id": "map-auto-13",
+      "fromGadgetId": "g6",
+      "toGadgetId": "g11",
+      "cableType": "USB_A_to_C",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-14",
+      "fromGadgetId": "g0",
+      "toGadgetId": "g17",
+      "cableType": "Bluetooth",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": true
+    },
+    {
+      "id": "map-auto-15",
+      "fromGadgetId": "g6",
+      "toGadgetId": "g18",
+      "cableType": "USB_A_to_C",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-16",
+      "fromGadgetId": "wall",
+      "toGadgetId": "g8",
+      "cableType": "Power",
+      "chargingOnly": false,
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-17",
+      "fromGadgetId": "g8",
+      "toGadgetId": "g5",
+      "cableType": "USB_C",
+      "chargingOnly": false,
+      "sourcePortId": "p1#0",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-18",
+      "fromGadgetId": "g8",
+      "toGadgetId": "g9",
+      "cableType": "USB_C",
+      "chargingOnly": false,
+      "sourcePortId": "p1#1",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-19",
+      "fromGadgetId": "g8",
+      "toGadgetId": "g10",
+      "cableType": "USB_A_to_C",
+      "chargingOnly": false,
+      "sourcePortId": "p2#0",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-20",
+      "fromGadgetId": "g8",
+      "toGadgetId": "g13",
+      "cableType": "USB_A",
+      "chargingOnly": false,
+      "sourcePortId": "p2#1",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    },
+    {
+      "id": "map-auto-21",
+      "fromGadgetId": "g8",
+      "toGadgetId": "g17",
+      "cableType": "USB_C",
+      "chargingOnly": true,
+      "sourcePortId": "p1#0",
+      "origin": "auto",
+      "confirmed": false,
+      "wireless": false
+    }
+  ],
+  "offsets": {},
+  "gadgets": [
+    {
+      "name": "ThinkPad X1 Carbon Gen 12",
+      "category": "PC",
+      "id": "g0",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "Thunderbolt",
+          "direction": "output",
+          "count": 1,
+          "supportsVideo": true
+        },
+        {
+          "id": "p2",
+          "type": "USB_C",
+          "direction": "output",
+          "count": 1,
+          "supportsVideo": false,
+          "label": "USB-C (データ)"
+        },
+        {
+          "id": "p3",
+          "type": "USB_A",
+          "direction": "output",
+          "count": 6
+        },
+        {
+          "id": "p4",
+          "type": "HDMI",
+          "direction": "output",
+          "count": 1,
+          "supportsVideo": true
+        },
+        {
+          "id": "p5",
+          "type": "DisplayPort",
+          "direction": "output",
+          "count": 1,
+          "supportsVideo": true
+        },
+        {
+          "id": "p6",
+          "type": "Audio3_5mm",
+          "direction": "input",
+          "count": 1
+        },
+        {
+          "id": "p7",
+          "type": "Bluetooth",
+          "direction": "bidirectional",
+          "count": 1
+        },
+        {
+          "id": "p_audio",
+          "type": "Audio3_5mm",
+          "direction": "output",
+          "count": 1
+        },
+        {
+          "id": "power_in_1791693074405",
+          "type": "Power",
+          "direction": "input",
+          "count": 1,
+          "label": "給電 (コンセント)"
+        }
+      ],
+      "createdAt": "2026-01-01T00:00:00Z",
+      "pcFormFactor": "desktop"
+    },
+    {
+      "name": "Dell UltraSharp U3225QE",
+      "model": "U3225QE",
+      "category": "Monitor",
+      "brand": "Dell",
+      "officialUrl": "https://www.dell.com/ja-jp/shop/dell--32-4k-thunderbolt--u3225qe/apd/210-bqmm/-",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "Thunderbolt",
+          "direction": "input",
+          "count": 1,
+          "supportsVideo": true,
+          "supportsPowerDelivery": true,
+          "label": "Thunderbolt 4 upstream (PD 140W)"
+        },
+        {
+          "id": "p2",
+          "type": "Thunderbolt",
+          "direction": "output",
+          "count": 1,
+          "supportsVideo": true,
+          "supportsPowerDelivery": true,
+          "label": "Thunderbolt 4 downstream (PD 15W)"
+        },
+        {
+          "id": "p3",
+          "type": "USB_C",
+          "direction": "input",
+          "count": 1,
+          "label": "USB-C KVM upstream"
+        },
+        {
+          "id": "p4",
+          "type": "HDMI",
+          "direction": "input",
+          "count": 1,
+          "supportsVideo": true
+        },
+        {
+          "id": "p5",
+          "type": "DisplayPort",
+          "direction": "input",
+          "count": 1,
+          "supportsVideo": true
+        },
+        {
+          "id": "p6",
+          "type": "DisplayPort",
+          "direction": "output",
+          "count": 1,
+          "supportsVideo": true,
+          "label": "DP MST out"
+        },
+        {
+          "id": "p7",
+          "type": "USB_A",
+          "direction": "output",
+          "count": 5
+        },
+        {
+          "id": "p8",
+          "type": "USB_C",
+          "direction": "output",
+          "count": 2
+        },
+        {
+          "id": "p9",
+          "type": "Ethernet",
+          "direction": "input",
+          "count": 1,
+          "label": "2.5GbE RJ-45"
+        },
+        {
+          "id": "p10",
+          "type": "Audio3_5mm",
+          "direction": "output",
+          "count": 1
+        },
+        {
+          "id": "p11",
+          "type": "Power",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g1",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Apple Studio Display",
+      "model": "Studio Display",
+      "category": "Monitor",
+      "brand": "Apple",
+      "officialUrl": "https://www.apple.com/jp/studio-display/",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "Thunderbolt",
+          "direction": "input",
+          "count": 1,
+          "supportsVideo": true,
+          "supportsPowerDelivery": true,
+          "label": "Thunderbolt 3 upstream (PD 96W)"
+        },
+        {
+          "id": "p2",
+          "type": "USB_C",
+          "direction": "output",
+          "count": 3,
+          "label": "USB-C 10Gb/s downstream"
+        },
+        {
+          "id": "p3",
+          "type": "Power",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g2",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "LG UltraGear 27GN850",
+      "model": "27GN850",
+      "category": "Monitor",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "HDMI",
+          "direction": "input",
+          "count": 2,
+          "supportsVideo": true,
+          "label": "HDMI 2.0"
+        },
+        {
+          "id": "p2",
+          "type": "DisplayPort",
+          "direction": "input",
+          "count": 1,
+          "supportsVideo": true,
+          "label": "DP 1.4"
+        },
+        {
+          "id": "p3",
+          "type": "USB_A",
+          "direction": "output",
+          "count": 2
+        },
+        {
+          "id": "p4",
+          "type": "Audio3_5mm",
+          "direction": "output",
+          "count": 1
+        },
+        {
+          "id": "p_up",
+          "type": "USB_B",
+          "direction": "input",
+          "count": 1,
+          "label": "USB upstream"
+        },
+        {
+          "id": "p5",
+          "type": "Power",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g3",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Monsgeek M5",
+      "model": "M5",
+      "category": "Keyboard",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_C",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g4",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Microsoft Arc Mouse",
+      "model": "Arc Mouse",
+      "category": "Mouse",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_C",
+          "direction": "input",
+          "count": 1,
+          "label": "充電"
+        },
+        {
+          "id": "p2",
+          "type": "Bluetooth",
+          "direction": "bidirectional",
+          "count": 1
+        }
+      ],
+      "id": "g5",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Anker Thunderbolt 4 Dock",
+      "model": "A8396",
+      "category": "Dock",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "Thunderbolt",
+          "direction": "input",
+          "count": 1,
+          "label": "Host (PD)"
+        },
+        {
+          "id": "p2",
+          "type": "Thunderbolt",
+          "direction": "output",
+          "count": 1,
+          "supportsVideo": true
+        },
+        {
+          "id": "p3",
+          "type": "HDMI",
+          "direction": "output",
+          "count": 2,
+          "supportsVideo": true
+        },
+        {
+          "id": "p4",
+          "type": "USB_A",
+          "direction": "output",
+          "count": 4
+        },
+        {
+          "id": "p5",
+          "type": "Ethernet",
+          "direction": "input",
+          "count": 1
+        },
+        {
+          "id": "p6",
+          "type": "Audio3_5mm",
+          "direction": "output",
+          "count": 1
+        },
+        {
+          "id": "p7",
+          "type": "SDCard",
+          "direction": "input",
+          "count": 1
+        },
+        {
+          "id": "p8",
+          "type": "Power",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g6",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Anker 655 USB-C Hub (8-in-1)",
+      "model": "655 (A8386)",
+      "category": "Hub",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_C",
+          "direction": "input",
+          "count": 1,
+          "label": "Host"
+        },
+        {
+          "id": "p2",
+          "type": "HDMI",
+          "direction": "output",
+          "count": 2,
+          "supportsVideo": true
+        },
+        {
+          "id": "p3",
+          "type": "USB_A",
+          "direction": "output",
+          "count": 3
+        },
+        {
+          "id": "p4",
+          "type": "USB_C",
+          "direction": "output",
+          "count": 1
+        },
+        {
+          "id": "p5",
+          "type": "SDCard",
+          "direction": "input",
+          "count": 1
+        },
+        {
+          "id": "p6",
+          "type": "microSDCard",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g7",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Anker PowerPort Atom III Slim 65W",
+      "category": "Charger",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_C",
+          "direction": "output",
+          "count": 2
+        },
+        {
+          "id": "p2",
+          "type": "USB_A",
+          "direction": "output",
+          "count": 2
+        },
+        {
+          "id": "p3",
+          "type": "Power",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g8",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "JBL Flip 6",
+      "category": "Speaker",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_C",
+          "direction": "input",
+          "count": 1,
+          "label": "充電"
+        },
+        {
+          "id": "p2",
+          "type": "Bluetooth",
+          "direction": "bidirectional",
+          "count": 1
+        }
+      ],
+      "id": "g9",
+      "createdAt": "2026-01-01T00:00:00Z",
+      "stereoPair": false
+    },
+    {
+      "name": "Razer Barracuda X (2023)",
+      "category": "Headphone",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_C",
+          "direction": "input",
+          "count": 1
+        },
+        {
+          "id": "p2",
+          "type": "Bluetooth",
+          "direction": "bidirectional",
+          "count": 1
+        }
+      ],
+      "id": "g10",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "HyperX SoloCast",
+      "model": "SoloCast",
+      "category": "Microphone",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_C",
+          "direction": "input",
+          "count": 1,
+          "label": "PC接続"
+        }
+      ],
+      "id": "g11",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Logicool StreamCam",
+      "model": "StreamCam C980",
+      "category": "Webcam",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_C",
+          "direction": "input",
+          "count": 1,
+          "label": "PC接続"
+        }
+      ],
+      "id": "g12",
+      "createdAt": "2026-01-01T00:00:00Z",
+      "displayOnly": true
+    },
+    {
+      "name": "Govee LED Strip Light M1",
+      "model": "LED Strip Light M1",
+      "category": "Light",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_A",
+          "direction": "input",
+          "count": 1,
+          "label": "USB電源"
+        }
+      ],
+      "id": "g13",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Elgato Key Light",
+      "model": "Key Light",
+      "category": "Light",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "Power",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g14",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Samsung PRO Plus SDXC 256GB",
+      "model": "MB-SD256S",
+      "category": "Storage",
+      "ports": [],
+      "id": "g15",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Buffalo WSR-6000AX8S (Wi-Fi 6)",
+      "model": "WSR-6000AX8S",
+      "category": "Router",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "Ethernet",
+          "direction": "input",
+          "count": 1,
+          "label": "WAN (2.5G)"
+        },
+        {
+          "id": "p2",
+          "type": "Ethernet",
+          "direction": "output",
+          "count": 4,
+          "label": "LAN"
+        },
+        {
+          "id": "p3",
+          "type": "USB_A",
+          "direction": "output",
+          "count": 1
+        },
+        {
+          "id": "p4",
+          "type": "Power",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g16",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Nintendo Switch 2 Proコントローラー",
+      "category": "Controller",
+      "powerUsage": "rechargeable",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "Bluetooth",
+          "direction": "bidirectional",
+          "count": 1
+        },
+        {
+          "id": "p2",
+          "type": "USB_C",
+          "direction": "input",
+          "count": 1,
+          "label": "充電・有線通信"
+        }
+      ],
+      "id": "g17",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "iPad Pro 13\" M4",
+      "category": "Tablet",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_C",
+          "direction": "input",
+          "count": 1,
+          "supportsVideo": true
+        },
+        {
+          "id": "p2",
+          "type": "wirelessCharging",
+          "direction": "output",
+          "count": 1
+        }
+      ],
+      "id": "g18",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Pixel 9 Pro",
+      "category": "Smartphone",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_C",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g19",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Samsung Galaxy Watch Ultra",
+      "category": "Smartwatch",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "wirelessCharging",
+          "direction": "input",
+          "count": 1,
+          "label": "Qi ワイヤレス充電"
+        }
+      ],
+      "id": "g20",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Ergotron LX シングルモニターアーム",
+      "category": "MonitorArm",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "MonitorArm",
+          "direction": "output",
+          "count": 1
+        }
+      ],
+      "id": "g21",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "FlexiSpot F9L シングルモニターアーム",
+      "category": "MonitorArm",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "MonitorArm",
+          "direction": "output",
+          "count": 1
+        }
+      ],
+      "id": "g22",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "EPSON カラリオ EP-885A",
+      "model": "EP-885A",
+      "category": "Printer",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "USB_B",
+          "direction": "input",
+          "count": 1,
+          "label": "PC接続"
+        },
+        {
+          "id": "p2",
+          "type": "Power",
+          "direction": "input",
+          "count": 1
+        },
+        {
+          "id": "p3",
+          "type": "WiFi",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g23",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Valve Index",
+      "category": "VRGlass",
+      "ports": [
+        {
+          "id": "p1",
+          "type": "DisplayPort",
+          "direction": "input",
+          "count": 1,
+          "supportsVideo": true
+        },
+        {
+          "id": "p2",
+          "type": "USB_A",
+          "direction": "input",
+          "count": 1,
+          "label": "USB データ接続"
+        },
+        {
+          "id": "p3",
+          "type": "Power",
+          "direction": "input",
+          "count": 1
+        }
+      ],
+      "id": "g24",
+      "createdAt": "2026-01-01T00:00:00Z",
+      "displayOnly": true
+    },
+    {
+      "name": "Herman Miller Embody",
+      "category": "Chair",
+      "id": "g25",
+      "ports": [],
+      "createdAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "sizes": {}
+}

@@ -1,0 +1,6 @@
+{
+  "CFBundleDisplayName": "MyDesk",
+  "CFBundleName": "MyDesk",
+  "NSPhotoLibraryUsageDescription": "デスクの写真を選んで保存するために使用します。",
+  "NSFaceIDUsageDescription": "パスキーで本人確認してログインするために使用します。"
+}

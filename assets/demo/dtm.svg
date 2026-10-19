@@ -1,0 +1,277 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <!-- 公式デモデスク④：音楽・DTM｜宅録スタジオ（音の経路を見せる） -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12211E"/>
+      <stop offset="100%" stop-color="#070F0D"/>
+    </linearGradient>
+    <radialGradient id="wallGlow" cx="50%" cy="34%" r="56%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#123A34"/>
+      <stop offset="100%" stop-color="#081916"/>
+    </linearGradient>
+    <linearGradient id="deskTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4C3B27"/>
+      <stop offset="100%" stop-color="#281E13"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .lbl   { font-family: "Yu Gothic UI","Meiryo","Segoe UI",sans-serif; font-size: 21px; fill: #8FA69E; }
+      .lead  { stroke: #3F5952; stroke-width: 1.5; fill: none; }
+      .dot   { fill: #34D399; }
+      .title { font-family: "Yu Gothic UI","Meiryo","Segoe UI",sans-serif; font-size: 46px; font-weight: 700; fill: #F1F5F9; }
+      .sub   { font-family: "Yu Gothic UI","Meiryo","Segoe UI",sans-serif; font-size: 24px; fill: #6B8078; }
+      .badge { font-family: "Segoe UI",sans-serif; font-size: 18px; font-weight: 700; fill: #34D399; letter-spacing: 2px; }
+      .hero  { font-family: "Yu Gothic UI","Meiryo","Segoe UI",sans-serif; font-size: 26px; font-weight: 700; fill: #6EE7B7; }
+      .case  { fill: #172622; stroke: #2E463F; stroke-width: 2; }
+      .bezel { fill: #14201D; stroke: #2E463F; stroke-width: 2.5; }
+      .audio { fill: none; stroke: #34D399; stroke-width: 3.5; stroke-opacity: 0.65; stroke-linecap: round; }
+      .cable { fill: none; stroke: #5C7168; stroke-width: 3; stroke-opacity: 0.5; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#wallGlow)"/>
+
+  <!-- 吸音パネル -->
+  <g fill="#16241F" stroke="#22352F" stroke-width="2">
+    <rect x="620" y="90" width="130" height="130" rx="8"/>
+    <rect x="768" y="90" width="130" height="130" rx="8"/>
+    <rect x="916" y="90" width="130" height="130" rx="8"/>
+    <rect x="694" y="238" width="130" height="130" rx="8"/>
+    <rect x="842" y="238" width="130" height="130" rx="8"/>
+  </g>
+
+  <rect x="0" y="936" width="1600" height="64" fill="#060C0A"/>
+  <path d="M0 936H1600" stroke="#1B2A26" stroke-width="2"/>
+
+  <!-- マイクブーム（Blue Compass）+ コンデンサーマイク -->
+  <g fill="none" stroke="#22352F" stroke-width="9" stroke-linecap="round">
+    <path d="M96 320l186 44"/>
+    <path d="M282 364l176-40"/>
+  </g>
+  <g>
+    <rect x="436" y="316" width="44" height="118" rx="20" class="case"/>
+    <g stroke="#33544A" stroke-width="2">
+      <path d="M444 340h28M444 356h28M444 372h28M444 388h28M444 404h28"/>
+    </g>
+  </g>
+
+  <!-- モニターアーム -->
+  <g>
+    <rect x="822" y="400" width="20" height="252" rx="6" fill="#1B2A26" stroke="#2E463F" stroke-width="2"/>
+    <rect x="806" y="636" width="52" height="20" rx="6" fill="#22352F"/>
+  </g>
+
+  <!-- 32" 4K モニター -->
+  <g>
+    <rect x="596" y="288" width="484" height="296" rx="12" class="bezel"/>
+    <rect x="609" y="301" width="458" height="270" rx="6" fill="url(#screen)"/>
+    <!-- DAW のトラック画面 -->
+    <g opacity="0.62">
+      <rect x="609" y="301" width="458" height="24" fill="#0A2019"/>
+      <g fill="#155E4C">
+        <rect x="626" y="342" width="150" height="20" rx="4"/>
+        <rect x="626" y="372" width="230" height="20" rx="4"/>
+        <rect x="626" y="402" width="104" height="20" rx="4"/>
+        <rect x="626" y="432" width="292" height="20" rx="4"/>
+        <rect x="626" y="462" width="186" height="20" rx="4"/>
+      </g>
+      <g fill="#0E3A30">
+        <rect x="790" y="342" width="240" height="20" rx="4"/>
+        <rect x="870" y="372" width="160" height="20" rx="4"/>
+        <rect x="744" y="402" width="286" height="20" rx="4"/>
+        <rect x="930" y="432" width="100" height="20" rx="4"/>
+        <rect x="826" y="462" width="204" height="20" rx="4"/>
+      </g>
+      <path d="M898 330v226" stroke="#6EE7B7" stroke-width="2" stroke-opacity="0.7"/>
+      <!-- ミキサーのフェーダー -->
+      <g fill="#0B2A22">
+        <rect x="626" y="502" width="404" height="54" rx="5"/>
+      </g>
+      <g stroke="#1E6A56" stroke-width="3">
+        <path d="M652 512v34M692 512v34M732 512v34M772 512v34M812 512v34M852 512v34M892 512v34M932 512v34"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- デスク（KARLBY 天板 + ALEX 引き出し） -->
+  <g>
+    <rect x="96" y="650" width="1408" height="28" rx="6" fill="url(#deskTop)"/>
+    <rect x="96" y="650" width="1408" height="6" rx="3" fill="#6B5133" opacity="0.85"/>
+    <g class="case">
+      <rect x="204" y="678" width="184" height="250" rx="4"/>
+      <rect x="1216" y="678" width="184" height="250" rx="4"/>
+    </g>
+    <g stroke="#2E463F" stroke-width="2">
+      <path d="M204 740h184M204 802h184M204 864h184"/>
+      <path d="M1216 740h184M1216 802h184M1216 864h184"/>
+    </g>
+    <g fill="#2E463F">
+      <rect x="272" y="704" width="48" height="8" rx="4"/><rect x="272" y="766" width="48" height="8" rx="4"/>
+      <rect x="272" y="828" width="48" height="8" rx="4"/><rect x="272" y="890" width="48" height="8" rx="4"/>
+      <rect x="1284" y="704" width="48" height="8" rx="4"/><rect x="1284" y="766" width="48" height="8" rx="4"/>
+      <rect x="1284" y="828" width="48" height="8" rx="4"/><rect x="1284" y="890" width="48" height="8" rx="4"/>
+    </g>
+  </g>
+
+  <!-- スタジオモニター（Yamaha HS7 ステレオペア・インシュレーター付き） -->
+  <g>
+    <rect x="212" y="474" width="112" height="164" rx="8" class="case"/>
+    <circle cx="268" cy="562" r="34" fill="#0A1512" stroke="#3B6357" stroke-width="3"/>
+    <circle cx="268" cy="506" r="12" fill="#0A1512" stroke="#3B6357" stroke-width="2"/>
+    <rect x="220" y="638" width="96" height="12" rx="3" fill="#22352F"/>
+
+    <rect x="1122" y="474" width="112" height="164" rx="8" class="case"/>
+    <circle cx="1178" cy="562" r="34" fill="#0A1512" stroke="#3B6357" stroke-width="3"/>
+    <circle cx="1178" cy="506" r="12" fill="#0A1512" stroke="#3B6357" stroke-width="2"/>
+    <rect x="1130" y="638" width="96" height="12" rx="3" fill="#22352F"/>
+  </g>
+
+  <!-- シンセ（Korg Minilogue XD） -->
+  <g>
+    <rect x="356" y="602" width="216" height="48" rx="6" class="case"/>
+    <g fill="#2E463F">
+      <circle cx="378" cy="618" r="6"/><circle cx="400" cy="618" r="6"/><circle cx="422" cy="618" r="6"/>
+      <circle cx="444" cy="618" r="6"/><circle cx="466" cy="618" r="6"/>
+    </g>
+    <g fill="#0A1512">
+      <rect x="366" y="632" width="196" height="14" rx="3"/>
+    </g>
+    <g fill="#20332D">
+      <rect x="372" y="632" width="8" height="9"/><rect x="388" y="632" width="8" height="9"/>
+      <rect x="412" y="632" width="8" height="9"/><rect x="428" y="632" width="8" height="9"/>
+      <rect x="444" y="632" width="8" height="9"/><rect x="468" y="632" width="8" height="9"/>
+      <rect x="484" y="632" width="8" height="9"/><rect x="508" y="632" width="8" height="9"/>
+    </g>
+  </g>
+
+  <!-- オーディオインターフェース（MOTU M4）※音の集合点 -->
+  <g>
+    <rect x="1256" y="600" width="168" height="50" rx="8" fill="#123028" stroke="#34D399" stroke-width="2.5"/>
+    <circle cx="1288" cy="624" r="15" fill="#0A1512" stroke="#6EE7B7" stroke-width="2"/>
+    <circle cx="1328" cy="624" r="15" fill="#0A1512" stroke="#6EE7B7" stroke-width="2"/>
+    <circle cx="1380" cy="624" r="19" fill="#0A1512" stroke="#6EE7B7" stroke-width="2.5"/>
+    <circle cx="1380" cy="624" r="4" fill="#6EE7B7"/>
+  </g>
+
+  <!-- Mac mini -->
+  <g>
+    <rect x="1440" y="614" width="56" height="36" rx="6" class="case"/>
+    <circle cx="1468" cy="632" r="5" fill="#0A1512"/>
+  </g>
+
+  <!-- 88鍵 MIDIキーボード（手前） -->
+  <g>
+    <rect x="546" y="612" width="540" height="40" rx="5" fill="#1B2A26" stroke="#2E463F" stroke-width="2"/>
+    <rect x="558" y="626" width="516" height="22" rx="2" fill="#DDE7E3" opacity="0.72"/>
+    <g fill="#0A1512" opacity="0.9">
+      <rect x="572" y="626" width="7" height="13"/><rect x="592" y="626" width="7" height="13"/>
+      <rect x="624" y="626" width="7" height="13"/><rect x="644" y="626" width="7" height="13"/>
+      <rect x="664" y="626" width="7" height="13"/><rect x="696" y="626" width="7" height="13"/>
+      <rect x="716" y="626" width="7" height="13"/><rect x="748" y="626" width="7" height="13"/>
+      <rect x="768" y="626" width="7" height="13"/><rect x="788" y="626" width="7" height="13"/>
+      <rect x="820" y="626" width="7" height="13"/><rect x="840" y="626" width="7" height="13"/>
+      <rect x="872" y="626" width="7" height="13"/><rect x="892" y="626" width="7" height="13"/>
+      <rect x="912" y="626" width="7" height="13"/><rect x="944" y="626" width="7" height="13"/>
+      <rect x="964" y="626" width="7" height="13"/><rect x="996" y="626" width="7" height="13"/>
+      <rect x="1016" y="626" width="7" height="13"/><rect x="1036" y="626" width="7" height="13"/>
+    </g>
+    <g fill="#2E463F">
+      <rect x="558" y="617" width="26" height="5" rx="2"/><rect x="592" y="617" width="26" height="5" rx="2"/>
+    </g>
+  </g>
+
+  <!-- ギタースタンド（デスク左の床） -->
+  <g>
+    <path d="M118 930l40-96M186 930l-40-96" stroke="#22352F" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <g transform="rotate(-9 152 760)">
+      <!-- くびれのあるボディ（ストラトのシルエット） -->
+      <path d="M152 738c34 0 56 20 56 44 0 14-10 24-10 36s12 20 12 36c0 28-26 48-58 48s-58-20-58-48c0-16 12-24 12-36s-10-22-10-36c0-24 22-44 56-44z"
+            fill="#2B1E12" stroke="#4A3A24" stroke-width="3"/>
+      <circle cx="152" cy="836" r="19" fill="#0A1512"/>
+      <rect x="142" y="608" width="20" height="140" rx="4" fill="#3B2C1B" stroke="#4A3A24" stroke-width="2"/>
+      <rect x="134" y="566" width="36" height="48" rx="6" fill="#2B1E12" stroke="#4A3A24" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- ヘッドホン（デスク右のフックに掛ける） -->
+  <g>
+    <path d="M1450 686a44 44 0 0 1 88 0" fill="none" stroke="#2E463F" stroke-width="9" stroke-linecap="round"/>
+    <rect x="1436" y="682" width="28" height="52" rx="12" class="case"/>
+    <rect x="1524" y="682" width="28" height="52" rx="12" class="case"/>
+  </g>
+
+  <!-- デスク下：電源タップ -->
+  <g>
+    <rect x="660" y="856" width="264" height="40" rx="8" class="case"/>
+    <g fill="#0A1512">
+      <rect x="678" y="867" width="26" height="18" rx="3"/><rect x="714" y="867" width="26" height="18" rx="3"/>
+      <rect x="750" y="867" width="26" height="18" rx="3"/><rect x="786" y="867" width="26" height="18" rx="3"/>
+      <rect x="822" y="867" width="26" height="18" rx="3"/><rect x="858" y="867" width="26" height="18" rx="3"/>
+    </g>
+  </g>
+  <g class="cable">
+    <path d="M700 856c0-52 34-84 92-96"/>
+    <path d="M800 856c46-44 128-62 186-70"/>
+    <path d="M880 862c74-26 172-42 240-46"/>
+  </g>
+
+  <!-- ★ 音の経路（すべて MOTU M4 に集まり、そこから返る） -->
+  <g class="audio">
+    <!-- マイク → IF -->
+    <path d="M458 434c0 92 240 150 560 168 90 5 190 7 232 4"/>
+    <!-- シンセ → IF -->
+    <path d="M572 626c220 14 480 12 678 4"/>
+    <!-- ギター → IF -->
+    <path d="M186 700c120 78 420 112 800 104 108-2 210-6 264-10"/>
+  </g>
+  <g class="audio">
+    <!-- IF → スタジオモニター（返り） -->
+    <path d="M1256 618C1150 600 1220 560 1234 556"/>
+    <path d="M1256 630C1120 664 900 690 320 654" stroke-opacity="0.35"/>
+    <!-- IF → ヘッドホン -->
+    <path d="M1424 636c40 10 60 26 70 46"/>
+  </g>
+  <g filter="url(#glow)">
+    <circle cx="1340" cy="625" r="46" fill="none" stroke="#34D399" stroke-width="2.5" stroke-opacity="0.7"/>
+  </g>
+
+  <!-- ラベル -->
+  <g>
+    <path class="lead" d="M458 316v-40"/><circle class="dot" cx="458" cy="316" r="4"/>
+    <text class="lbl" x="458" y="262" text-anchor="end">コンデンサーマイク</text>
+
+    <path class="lead" d="M268 474v-34h-84"/><circle class="dot" cx="268" cy="474" r="4"/>
+    <text class="lbl" x="184" y="424" text-anchor="end">スタジオモニター</text>
+
+    <path class="lead" d="M816 652v52h-140"/><circle class="dot" cx="816" cy="652" r="4"/>
+    <text class="lbl" x="664" y="712" text-anchor="end">88鍵 MIDIキーボード</text>
+
+    <path class="lead" d="M464 602V518"/><circle class="dot" cx="464" cy="602" r="4"/>
+    <text class="lbl" x="352" y="502">シンセサイザー</text>
+  </g>
+
+  <!-- ★ 主役の吹き出し -->
+  <g>
+    <path class="lead" d="M1340 579V380h80" stroke="#34D399" stroke-opacity="0.6"/>
+    <text class="hero" x="1504" y="252" text-anchor="end">音はここに集まる</text>
+    <text class="lbl" x="1504" y="290" text-anchor="end">マイクは XLR、楽器は 6.3mm。</text>
+    <text class="lbl" x="1504" y="318" text-anchor="end">オーディオIFを通って</text>
+    <text class="lbl" x="1504" y="346" text-anchor="end">モニターとヘッドホンへ返る</text>
+  </g>
+
+  <!-- タイトル -->
+  <g>
+    <rect x="96" y="86" width="86" height="30" rx="6" fill="#34D399" fill-opacity="0.14" stroke="#34D399" stroke-opacity="0.5"/>
+    <text class="badge" x="112" y="107">DEMO</text>
+    <text class="title" x="96" y="176">音楽・DTM｜宅録スタジオ</text>
+    <text class="sub" x="98" y="216">USBとコンセントだけでは説明できない配線</text>
+  </g>
+</svg>

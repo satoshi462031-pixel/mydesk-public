@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <!-- 公式デモデスク③：外出ワーク｜カフェ・出張先の作業環境（コンセント1口） -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#171526"/>
+      <stop offset="100%" stop-color="#0A0912"/>
+    </linearGradient>
+    <radialGradient id="wallGlow" cx="58%" cy="34%" r="56%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.17"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#241F3D"/>
+      <stop offset="100%" stop-color="#0E0C1A"/>
+    </linearGradient>
+    <linearGradient id="tableTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A3A2A"/>
+      <stop offset="100%" stop-color="#251C14"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .lbl   { font-family: "Yu Gothic UI","Meiryo","Segoe UI",sans-serif; font-size: 21px; fill: #9B93B8; }
+      .lead  { stroke: #4C4767; stroke-width: 1.5; fill: none; }
+      .dot   { fill: #A78BFA; }
+      .title { font-family: "Yu Gothic UI","Meiryo","Segoe UI",sans-serif; font-size: 46px; font-weight: 700; fill: #F1F5F9; }
+      .sub   { font-family: "Yu Gothic UI","Meiryo","Segoe UI",sans-serif; font-size: 24px; fill: #746D93; }
+      .badge { font-family: "Segoe UI",sans-serif; font-size: 18px; font-weight: 700; fill: #A78BFA; letter-spacing: 2px; }
+      .hero  { font-family: "Yu Gothic UI","Meiryo","Segoe UI",sans-serif; font-size: 26px; font-weight: 700; fill: #C4B5FD; }
+      .case  { fill: #1E1B30; stroke: #3B3557; stroke-width: 2; }
+      .bezel { fill: #191627; stroke: #3B3557; stroke-width: 2.5; }
+      .cable { fill: none; stroke: #A78BFA; stroke-width: 3.5; stroke-opacity: 0.6; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#wallGlow)"/>
+
+  <!-- 壁のタイル（カフェの内装） -->
+  <g stroke="#221E38" stroke-width="1" opacity="0.75">
+    <path d="M0 160H1600M0 300H1600M0 440H1600M0 580H1600"/>
+    <path d="M180 0V700M420 0V700M660 0V700M900 0V700M1140 0V700M1380 0V700"/>
+  </g>
+
+  <!-- 床 -->
+  <rect x="0" y="940" width="1600" height="60" fill="#090810"/>
+  <path d="M0 940H1600" stroke="#231F38" stroke-width="2"/>
+
+  <!-- ★ 壁のコンセント（1口だけ） -->
+  <g>
+    <rect x="104" y="690" width="88" height="122" rx="10" fill="#211D33" stroke="#4C4467" stroke-width="2.5"/>
+    <g fill="#0C0A16">
+      <rect x="132" y="716" width="10" height="26" rx="3"/>
+      <rect x="154" y="716" width="10" height="26" rx="3"/>
+    </g>
+    <!-- 刺さっている充電器（CIO NovaPort TRIO 65W） -->
+    <rect x="116" y="754" width="64" height="70" rx="12" class="case"/>
+    <g fill="#0C0A16">
+      <rect x="128" y="800" width="14" height="9" rx="3"/>
+      <rect x="148" y="800" width="14" height="9" rx="3"/>
+      <rect x="138" y="784" width="14" height="9" rx="3"/>
+    </g>
+    <circle cx="148" cy="768" r="4" fill="#A78BFA"/>
+  </g>
+
+  <!-- カフェのテーブル -->
+  <g>
+    <ellipse cx="840" cy="662" rx="546" ry="16" fill="#3B2E20"/>
+    <rect x="294" y="656" width="1092" height="20" rx="10" fill="url(#tableTop)"/>
+    <rect x="810" y="676" width="58" height="248" fill="#1B1729"/>
+    <ellipse cx="839" cy="928" rx="126" ry="18" fill="#211D33"/>
+  </g>
+
+  <!-- ポータブルモニター（USB-C 1本で映像も給電も） -->
+  <g>
+    <rect x="320" y="436" width="330" height="200" rx="10" class="bezel"/>
+    <rect x="332" y="448" width="306" height="176" rx="5" fill="url(#screen)"/>
+    <g opacity="0.55">
+      <rect x="348" y="464" width="120" height="11" rx="5" fill="#5B4C93"/>
+      <rect x="348" y="486" width="200" height="8" rx="4" fill="#2E2749"/>
+      <rect x="348" y="504" width="168" height="8" rx="4" fill="#2E2749"/>
+      <rect x="348" y="534" width="274" height="72" rx="6" fill="#241E3C"/>
+    </g>
+    <path d="M470 636h30v22h-30z" fill="#1B1729"/>
+    <path d="M500 636l52 22h-52z" fill="#15121F"/>
+  </g>
+
+  <!-- ThinkPad X1 Carbon -->
+  <g>
+    <rect x="690" y="452" width="312" height="186" rx="9" class="bezel"/>
+    <rect x="702" y="464" width="288" height="162" rx="5" fill="#14111F"/>
+    <g opacity="0.6">
+      <rect x="716" y="478" width="96" height="10" rx="5" fill="#4A4079"/>
+      <rect x="716" y="498" width="180" height="8" rx="4" fill="#282142"/>
+      <rect x="716" y="514" width="152" height="8" rx="4" fill="#282142"/>
+      <rect x="716" y="540" width="248" height="70" rx="5" fill="#1E1934"/>
+    </g>
+    <circle cx="846" cy="470" r="4" fill="#8B1F2B"/>
+    <path d="M666 638h360l16 18H650z" fill="#221E33" stroke="#3B3557" stroke-width="2"/>
+    <rect x="716" y="643" width="252" height="7" rx="3" fill="#332C50"/>
+  </g>
+
+  <!-- イヤホンケース -->
+  <rect x="470" y="630" width="52" height="28" rx="10" class="case"/>
+
+  <!-- コーヒー -->
+  <g>
+    <ellipse cx="590" cy="656" rx="50" ry="10" fill="#2C2238"/>
+    <path d="M558 600h64l-8 52h-48z" fill="#241F35" stroke="#3B3557" stroke-width="2"/>
+    <ellipse cx="590" cy="600" rx="32" ry="8" fill="#4A3322"/>
+    <path d="M622 612c22 0 22 26 0 26" fill="none" stroke="#3B3557" stroke-width="4"/>
+  </g>
+
+  <!-- スマートフォン（立てかけ） -->
+  <g>
+    <rect x="1014" y="592" width="46" height="66" rx="7" class="case"/>
+    <rect x="1020" y="598" width="34" height="54" rx="4" fill="#131020"/>
+  </g>
+
+  <!-- モバイルバッテリー -->
+  <g>
+    <rect x="1080" y="610" width="126" height="48" rx="10" class="case"/>
+    <g fill="#A78BFA" fill-opacity="0.75">
+      <rect x="1096" y="629" width="14" height="8" rx="3"/>
+      <rect x="1116" y="629" width="14" height="8" rx="3"/>
+      <rect x="1136" y="629" width="14" height="8" rx="3"/>
+      <rect x="1156" y="629" width="14" height="8" rx="3" fill-opacity="0.25"/>
+    </g>
+    <rect x="1182" y="626" width="10" height="14" rx="3" fill="#0C0A16"/>
+  </g>
+
+  <!-- USB-C ハブ + ポータブルSSD -->
+  <g>
+    <rect x="1230" y="628" width="78" height="30" rx="7" class="case"/>
+    <g fill="#0C0A16">
+      <rect x="1242" y="638" width="12" height="10" rx="2"/>
+      <rect x="1260" y="638" width="12" height="10" rx="2"/>
+      <rect x="1278" y="638" width="18" height="10" rx="2"/>
+    </g>
+    <rect x="1316" y="632" width="62" height="26" rx="6" fill="#232B3C" stroke="#3B3557" stroke-width="2"/>
+  </g>
+
+  <!-- 配線：すべて1台の充電器から出る -->
+  <g class="cable">
+    <path d="M182 790C340 850 520 740 700 674"/>
+    <path d="M182 806C460 900 860 792 1076 662"/>
+  </g>
+  <g class="cable" stroke-opacity="0.4" stroke-width="3">
+    <path d="M1002 622c34 6 56 12 76 16"/>
+    <path d="M1002 640c84 12 164 8 226-2"/>
+    <path d="M650 560c14-4 26-2 40 4"/>
+  </g>
+
+  <!-- ★ 主役の吹き出し -->
+  <g filter="url(#glow)">
+    <circle cx="148" cy="729" r="30" fill="none" stroke="#A78BFA" stroke-width="3" stroke-opacity="0.8"/>
+  </g>
+  <g>
+    <path class="lead" d="M148 699V366h56" stroke="#A78BFA" stroke-opacity="0.6"/>
+    <text class="hero" x="204" y="298">コンセントは1口だけ</text>
+    <text class="lbl" x="204" y="332">65W 充電器1台で3口に分け、</text>
+    <text class="lbl" x="204" y="358">足りない分はモバイルバッテリーで賄う</text>
+  </g>
+
+  <!-- ラベル -->
+  <g>
+    <path class="lead" d="M650 436v-24"/><circle class="dot" cx="650" cy="436" r="4"/>
+    <text class="lbl" x="650" y="398" text-anchor="end">15.6" ポータブルモニター</text>
+
+    <path class="lead" d="M1002 452h94v-56"/><circle class="dot" cx="1002" cy="452" r="4"/>
+    <text class="lbl" x="1096" y="376">ThinkPad X1 Carbon</text>
+
+    <path class="lead" d="M1143 658v88h124"/><circle class="dot" cx="1143" cy="658" r="4"/>
+    <text class="lbl" x="1280" y="754">20000mAh バッテリー</text>
+
+    <path class="lead" d="M1269 658v34h92"/><circle class="dot" cx="1269" cy="658" r="4"/>
+    <text class="lbl" x="1374" y="700">USB-C ハブ / SSD</text>
+  </g>
+
+  <!-- タイトル -->
+  <g>
+    <rect x="96" y="86" width="86" height="30" rx="6" fill="#A78BFA" fill-opacity="0.14" stroke="#A78BFA" stroke-opacity="0.5"/>
+    <text class="badge" x="112" y="107">DEMO</text>
+    <text class="title" x="96" y="176">外出ワーク｜カフェ・出張</text>
+    <text class="sub" x="98" y="216">机も椅子も持たない、1口で完結する作業環境</text>
+  </g>
+</svg>
